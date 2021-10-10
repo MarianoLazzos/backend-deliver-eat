@@ -1,0 +1,53 @@
+# //Request para cargar un comercio
+# POST http://localhost:5000/comercio/new
+# Content-Type: application/json
+
+# {
+#   "productos": [],
+#   "horarioApertura": "20:30",
+#   "horarioCierre": "23:30",
+#   "diasAtencion": ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado"],
+#   "tiempoPromedioAtencion": 30,
+#   "ubicacion": { "ciudad": "Cordoba", "calle": "Ituzaingo", "nro": "960" },
+#   "nombre": "Pizza 960",
+#   "adherido": true,
+#   "tipo": "pizzeria",
+#   "categoriasProducto": ["pizzas", "bebidas", "guarniciones"],
+#   "seguimientoCadete": true,
+#   "image": "https://www.infobae.com/new-resizer/qmQJMvCyC9GFzIumeLDCo55Vlp4=/1200x900/filters:format(jpg):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/SJ2YC5V7NNDLVD25LCWEJMYA5M.jpg"
+# }
+
+# ###
+
+# //Request para crear el carrito
+# POST http://localhost:5000/carrito/new
+# Content-Type: application/json
+
+# {
+#   "productos": [],
+#   "dimensionMochila": 0.05
+# }
+
+# ###
+# POST http://localhost:5000/comercio/addproduct/613545acaec2cc4e9ec0eec3
+
+
+# POST http://localhost:5000/cart/add/613518ca399df09324be7692
+# Content-Type: application/json
+
+#  {
+#       "nombre": "Lomo Americano",
+#       "peso": "0.5",
+#       "dimension": 0.0015,
+#       "categoria": "lomitos",
+#       "image": "https://billylomito.com.ar/uploads/Menu/Menu%20nuevo/02_Lomo-Americano.jpg",
+#       "precio": 900,
+#       "_id": "6135482149cb4019f449cceb"
+# }
+
+# ###
+
+# POST http://localhost:5000/cart/remove/6135482149cb4019f449cceb
+
+
+
